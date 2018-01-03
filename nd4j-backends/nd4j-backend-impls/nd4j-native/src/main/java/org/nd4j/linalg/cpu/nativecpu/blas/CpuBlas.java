@@ -139,4 +139,16 @@ public class CpuBlas extends Nd4jBlas {
     public int getBlasVendorId() {
         return blas_get_vendor();
     }
+
+// the following functions should be in blas_extra.h
+    int blas_get_vendor() {
+        return -1;
+    }
+
+    void blas_set_num_threads(int num) {
+    }
+
+    int blas_get_num_threads() {
+        return 1;
+    }
 }
