@@ -221,6 +221,27 @@
             </distributionManagement>
         </profile>
         <profile>
+            <id>gluonnexus</id>
+            <activation>
+                <property>
+                    <name>local.software.repository</name>
+                    <value>gluonnexus</value>
+                </property>
+            </activation>
+            <distributionManagement>
+                <repository>
+                    <id>gluonnexus</id>
+                    <name>gluonnexus</name>
+                    <url>http://nexus.gluonhq.com/nexus/content/repositories/snapshots/</url>
+                </repository>
+                <snapshotRepository>
+                    <id>gluonnexus-snapshot</id>
+                    <name>gluonnexus-snapshot</name>
+                    <url>http://nexus.gluonhq.com/nexus/content/repositories/snapshots/</url>
+                </snapshotRepository>
+            </distributionManagement>
+        </profile>
+        <profile>
             <id>skymindnexus-skil</id>
             <activation>
                 <property>
